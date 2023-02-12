@@ -3,7 +3,7 @@
 
 @author: Dinesh
 """
-
+import streamlit as st 
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 from flask_ngrok import run_with_ngrok
@@ -58,4 +58,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
