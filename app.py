@@ -11,7 +11,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('/content/drive/My Drive/mobilelinearregression.pkl','rb')) -
+model = pickle.load(open('/content/drive/My Drive/mobilelinearregression.pkl','rb'))
 run_with_ngrok(app)
 
 @app.route('/')
